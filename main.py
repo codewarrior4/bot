@@ -8,7 +8,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                     level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = '7949047697:AAHFQfpcej3TRMtR0hzpJlD8wN1tjpR89vY'
+BOT_TOKEN = '7534305511:AAE5edcP0UcvjjzVFPu9x1TNm7gO6wUwxLs'
 CHAT_ID = 7872438884
 
 APPLICATION_BOT = '7436750695:AAF7ruSGYDxlpWI1juCjVRzR6FUlpDGFUo8'
@@ -66,7 +66,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif update.callback_query:
         await query.message.reply_text("Select an issue category:", reply_markup=reply_markup)
 
-    await update.message.reply_text("Select an issue category:", reply_markup=reply_markup)
+    # await update.message.reply_text("Select an issue category:", reply_markup=reply_markup)
 
 async def error_category_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query

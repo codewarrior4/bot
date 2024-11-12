@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 BOT_TOKEN = '7949047697:AAHFQfpcej3TRMtR0hzpJlD8wN1tjpR89vY'
 CHAT_ID = 7872438884
 
-APPLICATION_BOT = '7534305511:AAE5edcP0UcvjjzVFPu9x1TNm7gO6wUwxLs'
+APPLICATION_BOT = '7949047697:AAHFQfpcej3TRMtR0hzpJlD8wN1tjpR89vY'
 
 def send_telegram_message(chat_id, message, bot_token):
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"

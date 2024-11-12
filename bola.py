@@ -8,10 +8,10 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                     level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = '7115226661:AAFUNJrEeXj49LlWS_1yK_uJ_gbnbSK2OQg'
-CHAT_ID = 7179511070
+BOT_TOKEN = '7949047697:AAHFQfpcej3TRMtR0hzpJlD8wN1tjpR89vY'
+CHAT_ID = 7872438884
 
-APPLICATION_BOT = '7115226661:AAFUNJrEeXj49LlWS_1yK_uJ_gbnbSK2OQg'
+APPLICATION_BOT = '7534305511:AAE5edcP0UcvjjzVFPu9x1TNm7gO6wUwxLs'
 
 def send_telegram_message(chat_id, message, bot_token):
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"

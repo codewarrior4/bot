@@ -1,5 +1,5 @@
 import asyncio
-from file1 import setup_application as setup_application_file1
+from bola import setup_application as setup_application_file1
 from file2 import setup_application as setup_application_file2
 
 async def start_bot(app):

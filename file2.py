@@ -8,7 +8,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                     level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = '7949047697:AAHFQfpcej3TRMtR0hzpJlD8wN1tjpR89vY'
+BOT_TOKEN = '8034903170:AAF2M9tJWN4YMTM8LvvbnIE7yoA_r4DPiPU'
 
 CHAT_ID = 7872438884
 

@@ -8,10 +8,11 @@ async def start_bot(app):
     await app.updater.start_polling()  # Start polling without blocking
 
 async def main():
-    app1 = setup_application_file1()
+    # app1 = setup_application_file1()
     app2 = setup_application_file2()
     # Run both bots concurrently
-    await asyncio.gather(start_bot(app1), start_bot(app2))
+    await asyncio.gather(start_bot(app2))
+    # await asyncio.gather(start_bot(app1), start_bot(app2))
     # Keep the program running
     await asyncio.Event().wait() 
 

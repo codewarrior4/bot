@@ -1,6 +1,6 @@
 import logging
 import requests
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup,Bot
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes
 
 # Set up logging
@@ -8,10 +8,13 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                     level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = '7949047697:AAHFQfpcej3TRMtR0hzpJlD8wN1tjpR89vY'
-CHAT_ID = 7872438884
+BOT_TOKEN = '7511581846:AAHPLC-F2ptZLNVwxyoBaO1VLBXUUuttVw0'
+bot = Bot(BOT_TOKEN)
+bot.delete_webhook(drop_pending_updates=True)
 
-APPLICATION_BOT = '7537407380:AAGNuYEpg7TpmjafqYgQ5gKJ0DceyFIh7G4'
+CHAT_ID = 7179511070
+
+APPLICATION_BOT = '7511581846:AAHPLC-F2ptZLNVwxyoBaO1VLBXUUuttVw0'
 
 def send_telegram_message(chat_id, message, bot_token):
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
@@ -169,7 +172,7 @@ async def restart_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await start(update, context)
 
 def setup_application():
-    application = Application.builder().token(BOT_TOKEN).build()
+    application = Application.builder().token(APPLICATION_BOT).build()
      # Add an error handler
     application.add_error_handler(error_handler)
 

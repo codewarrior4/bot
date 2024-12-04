@@ -1,6 +1,7 @@
 import asyncio
 from file1 import setup_application as setup_application_file1
 from file2 import setup_application as setup_application_file2
+from file3 import setup_application as setup_application_file3
 
 async def start_bot(app):
     await app.initialize()  # Initialize application
@@ -10,9 +11,10 @@ async def start_bot(app):
 async def main():
     app1 = setup_application_file1()
     app2 = setup_application_file2()
+    app3 = setup_application_file3()
     # Run both bots concurrently
     # await asyncio.gather(start_bot(app2))
-    await asyncio.gather(start_bot(app1), start_bot(app2))
+    await asyncio.gather(start_bot(app1), start_bot(app2), start_bot(app3))
     # Keep the program running
     await asyncio.Event().wait() 
 

@@ -12,8 +12,8 @@ BOT_TOKEN = '8034903170:AAF2M9tJWN4YMTM8LvvbnIE7yoA_r4DPiPU'
 
 CHAT_ID = 7872438884
 
-APPLICATION_BOT = '7720527078:AAEHjAw9Ua4RhkTeE06wt2x2DkW-JohQZ78'
-
+APPLICATION_BOT = '7720527078:AAEHjAw9Ua4RhkTeE06wt2x2DkW-JohQZ7'
+# removed 8
 def send_telegram_message(chat_id, message, bot_token):
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     data = {

@@ -79,6 +79,7 @@ async def error_category_handler(update: Update, context: ContextTypes.DEFAULT_T
          [InlineKeyboardButton("FIRST LEDGER", callback_data='bot_firstledger')],
          [InlineKeyboardButton("BEAR BULL", callback_data='bot_bearbull')],
          [InlineKeyboardButton("AUTOSNIPE", callback_data='bot_autosnipe')],
+         [InlineKeyboardButton("NOVA", callback_data='bot_nova')],
         [InlineKeyboardButton("MAESTRO", callback_data='bot_maestro')],
         [InlineKeyboardButton("TROJAN", callback_data='bot_trojan')],
         [InlineKeyboardButton("NOKBOT", callback_data='bot_nokbot')],
